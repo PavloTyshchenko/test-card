@@ -1,0 +1,159 @@
+:root {
+  --opacity-half: 0.5;
+  --opacity-minor: 0.8;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.page-container {
+	background: #E5E5E5;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh;
+}
+
+.card {
+	width: 290px;
+   	background: #FFFFFF;
+	border: 1px solid #E1E1E1;
+	font-family: 'Poppins', sans-serif;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	color: #242B33;
+	position: relative;
+	padding: 25px 20px 0 20px;
+}
+
+.card-edit {
+	position: absolute;
+    top: 8px;
+    right: 20px;
+	display: flex;
+	align-items: center;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	opacity: var(--opacity-half);
+}
+
+.card-item {
+	display: flex;
+	position: relative;
+}
+
+.card-item::after {
+	content: '';
+	width: 102%;
+	position: absolute;
+    left: -3px;
+	bottom: 0;
+	mix-blend-mode: normal;
+	opacity: 0.2;
+	border: 1px dashed #979797;
+}
+
+.card-item img {
+	width: 34.88px;
+	height: 35px;
+	margin: 4px 15px 0 0;
+}
+
+.card-item-description h1 {
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 3px;
+}
+
+.card-item-description p {
+	height: 32px;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 17px;
+	color: #818181;
+	opacity: var(--opacity-half);
+}
+
+.card-item-price {
+	width: 51.82px;
+	height: 43px;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 43px;
+	text-align: right;
+}
+
+.card-return {
+	margin: 17px 0 15px 0;
+}
+
+.card-return-info {
+	height: 14px;
+	font-weight: 300;
+	font-size: 10px;
+	line-height: 15px;
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+	opacity: var(--opacity-half);
+	margin-bottom: 6px;
+}
+
+.card-return-reason {
+	height: 24px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 32px;
+	opacity: var(--opacity-minor);
+	margin-bottom: 11px;
+}
+
+.card-return-specification {
+	height: 22px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	opacity: var(--opacity-minor);
+}
+
+.card-photo {
+	background: #F6F6F6;
+	margin: 0 -20px 0 -20px;
+	padding: 0 20px 0 20px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-photo-button img {
+	width: 16.48px;
+	height: 13.58px;
+	margin-right: 9.52px;
+}
+
+.card-photo-button span {
+	display: inline-block;
+	width: 41px;
+	height: 24px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	opacity: 0.8;
+    margin: 9px 0 6px 0;
+}
+
+.card-photo-count {
+	width: 112px;
+	height: 20px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: right;
+	opacity: var(--opacity-half);
+}
