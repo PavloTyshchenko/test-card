@@ -55,6 +55,10 @@
 }
 
 .card-item-description .header {
+	margin-right: 5px;
+}
+
+.card-item-description .header {
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 20px;
@@ -123,6 +127,7 @@
 .card-photo-button {
 	display: flex;
     align-items: baseline;
+    margin-right: 5px;
 }
 
 .card-photo-button .icon {
@@ -133,11 +138,9 @@
 
 .card-photo-button .text {
 	display: inline-block;
-	width: 41px;
-	height: 24px;
 	font-weight: 300;
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 24px;
 	opacity: var(--opacity-minor);
     margin: 9px 0 6px 0;
 }
