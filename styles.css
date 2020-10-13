@@ -44,34 +44,24 @@
 .card-item {
 	display: flex;
 	position: relative;
+	padding-bottom: 15px;
+	border-bottom: 1px dotted #97979733;
 }
 
-.card-item::after {
-	content: '';
-	width: 102%;
-	position: absolute;
-    left: -3px;
-	bottom: 0;
-	mix-blend-mode: normal;
-	opacity: 0.2;
-	border: 1px dashed #979797;
-}
-
-.card-item img {
+.card-item .card-item-image {
 	width: 34.88px;
 	height: 35px;
 	margin: 4px 15px 0 0;
 }
 
-.card-item-description h1 {
+.card-item-description .header {
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 20px;
 	margin-bottom: 3px;
 }
 
-.card-item-description p {
-	height: 32px;
+.card-item-description .subtitle {
 	font-family: Roboto;
 	font-weight: normal;
 	font-size: 12px;
@@ -81,7 +71,6 @@
 }
 
 .card-item-price {
-	width: 51.82px;
 	height: 43px;
 	font-weight: 500;
 	font-size: 19px;
@@ -94,7 +83,6 @@
 }
 
 .card-return-info {
-	height: 14px;
 	font-weight: 300;
 	font-size: 10px;
 	line-height: 15px;
@@ -106,6 +94,7 @@
 }
 
 .card-return-reason {
+	display: inline-block;
 	height: 24px;
 	font-weight: bold;
 	font-size: 16px;
@@ -115,7 +104,6 @@
 }
 
 .card-return-specification {
-	height: 22px;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 24px;
@@ -131,26 +119,29 @@
     align-items: center;
 }
 
-.card-photo-button img {
+.card-photo-button {
+	display: flex;
+    align-items: baseline;
+}
+
+.card-photo-button .icon {
 	width: 16.48px;
 	height: 13.58px;
 	margin-right: 9.52px;
 }
 
-.card-photo-button span {
+.card-photo-button .text {
 	display: inline-block;
 	width: 41px;
 	height: 24px;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 21px;
-	opacity: 0.8;
+	opacity: var(--opacity-minor);
     margin: 9px 0 6px 0;
 }
 
 .card-photo-count {
-	width: 112px;
-	height: 20px;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 21px;
