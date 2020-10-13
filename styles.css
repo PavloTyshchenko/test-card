@@ -72,6 +72,7 @@
 
 .card-item-price {
 	height: 43px;
+	margin-left: auto;
 	font-weight: 500;
 	font-size: 19px;
 	line-height: 43px;
